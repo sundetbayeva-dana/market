@@ -1,0 +1,202 @@
+@font-face {
+  font-family: 'Lato';
+  font-style:  normal;
+  src: url(../../vendor/fonts/Lato-Regular.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'TT Days Sans';
+  src: url(../../vendor/fonts/TTDaysSans-Light.woff2) format('woff2'),
+    url(../../vendor/fonts/TTDaysSans-Light.woff) format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Days Sans';
+  src: url(../../vendor/fonts/TTDaysSans-Bold.woff2) format('woff2'),
+      url(../../vendor/fonts/TTDaysSans-Bold.woff) format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr minmax(150px,227px) minmax(130px, 183px) minmax(150px, 227px);
+  grid-template-rows: repeat( 2, 138px);
+  grid-template-areas:
+  "a b c d e"
+  "f b g g g";
+  background: linear-gradient(175.63deg, #DAD1FC 0%, #E4E3E7 94.58%);
+}
+
+.footer__logo-cont {
+  grid-area: a;
+  border-top: 1px solid rgb(0,0,0);
+  border-bottom: 1px solid rgb(0,0,0);
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;  
+}
+
+.footer__logo {
+  width: 48px;
+  height: 48px;
+  margin-left: 120px;
+}
+
+.footer__logo-text {
+  font-family: 'Lato', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0 0 0 10.7px;  
+  max-width: 97px;
+  text-align: start;
+}
+
+.footer__contacts-cont {
+  grid-area: b;
+  border: 1px solid rgb(0,0,0);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.footer__contacts-label {
+  font-family: 'TT Days Sans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 300;
+  color: rgb(0,0,0);
+  margin: 43px 0 0 193px;
+}
+
+.footer__contacts-label:first-of-type {
+  margin-top: 65px ;
+  margin-left: 193px;
+}
+
+.footer__contacts-value {
+  font-family: 'TT Days Sans', Arial, sans-serif;
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 700;
+  color: rgb(0,0,0);
+  margin: 7px 0 0 217px;
+}
+
+.footer__instagram-cont {
+  grid-area: c;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  border-top: 1px solid rgb(0,0,0);
+  border-right: 1px solid rgb(0,0,0);
+}
+
+.footer__instagram {
+  color: rgb(0,0,0);
+  padding-top: 53px;
+  padding-left: 122px;
+}
+
+.footer__facebook-cont {
+  grid-area: d;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  border-top: 1px solid rgb(0,0,0);
+  border-right: 1px solid rgb(0,0,0);
+}
+
+.footer__facebook {
+  color: rgb(0,0,0);
+  padding-top: 53px;
+  padding-left: 85px;
+}
+
+.footer__telegram-cont {
+  grid-area: e;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  border-top: 1px solid rgb(0,0,0);
+}
+
+.footer__telegram {
+  color: rgb(0,0,0);
+  padding-top: 53px;
+  padding-left: 77px;
+}
+
+.footer__copyright-cont {
+  grid-area: f;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  border-bottom: 1px solid rgb(0,0,0);
+}
+
+.footer__copyright {
+  color: rgb(0,0,0);
+  padding-top: 57px;
+  padding-left: 120px;
+  margin: 0;
+  font-family: 'TT Days Sans', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 300;
+}
+
+.footer__subscribe-cont {
+  grid-area: g;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  border-top: 1px solid rgb(0,0,0);
+  border-bottom: 1px solid rgb(0,0,0);
+  padding-left: 122px;
+}
+
+.footer__subscribe-form {
+  border-bottom: 1px solid rgb(0,0,0);
+  width: calc(100% - 2*121px);
+  display: flex;
+  flex-direction: row;
+}
+
+.footer__subscribe-text {
+  font-family: 'TT Days Sans', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 300;
+  margin: 33px 0 0;
+}
+
+.footer__subscribe-input {
+  border: none;
+  width: 100%;
+  padding-bottom: 11px;
+  margin: 38px auto 0;
+  /* background: linear-gradient(175.63deg, #DAD1FC 0%, #E4E3E7 94.58%); */
+  background: inherit;
+}
+
+.footer__subscribe-input::placeholder {
+  font-family: 'TT Days Sans', Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 0 0 11px;
+}
+
+.footer__subscribe-button {
+  width: 23px;
+  height: 10px;
+  margin: auto 0 14px;
+}

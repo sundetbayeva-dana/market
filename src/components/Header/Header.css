@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'Lato';
+  font-style:  normal;
+  src: url(../../vendor/fonts/Lato-Regular.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'TT Days Sans';
+  src: url(../../vendor/fonts/TTDaysSans-Regular.woff2) format('woff2'),
+      url(../../vendor/fonts/TTDaysSans-Regular.woff) format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Days Sans';
+  src: url(../../vendor/fonts/TTDaysSans-Bold.woff2) format('woff2'),
+      url(../../vendor/fonts/TTDaysSans-Bold.woff) format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+.header {
+  width: calc(100% - 2*120px);
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto 0;
+  padding: 52px 0 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__logo {
+  width: 48px;
+  height: 48px;
+}
+
+.header-logo__text {
+  font-family: 'Lato', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  width: 92px;
+  margin: 0 0 0 10.7px;
+  text-align: start;
+}
+
+.header__links-cont {
+  display: flex;
+  flex-direction: row;
+  margin: auto 100px auto auto;  
+}
+
+.header__link {
+  margin: 0 0 0 44px;
+  text-decoration: none;
+  font-family: 'TT Days Sans', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: rgb(0,0,0)
+}
+
+.header__link:first-child {
+  margin: 0;  
+}
+
+.header__basket {
+  font-family: 'TT Days Sans', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-decoration: none;
+  color: rgb(0,0,0)
+}
